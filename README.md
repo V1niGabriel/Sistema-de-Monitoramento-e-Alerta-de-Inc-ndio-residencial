@@ -40,6 +40,7 @@ LED RGB:
 - pin Red -> Arduino pino digital 11
 - pin Grenn -> Arduino pino digital 10
 - pin Blue -> Arduino pino digital 9
+  
 Buzzer ativo -> Arduino pino digital 6
 
 Sensor MQ-135 -> Arduino pino analógico A0
