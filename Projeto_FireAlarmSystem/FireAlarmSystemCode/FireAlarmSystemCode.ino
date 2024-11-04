@@ -85,7 +85,7 @@ void loop() {
       mensagemblue("");
       delay(5000);
 
-      if ((EmissaoGas < 350) && (temperatura <= 30)){ //ambiente normal
+      if ((EmissaoGas < 350) && (temperatura <= 32)){ //ambiente normal
         ControlaLED(false, false, true);
         noTone(buzzer);
       }
@@ -95,10 +95,10 @@ void loop() {
           tone(buzzer, 1500, 2000);
         } 
       }
-      else if (temperatura > 30){ //Niveis de temperatura preocupante
+      else if (temperatura > 32){ //Niveis de temperatura preocupante
         ControlaLED(true, false, true);
         noTone(buzzer);
-        mensagemblue("Temperatura acima de 35°C");
+        mensagemblue("Temperatura acima de 32°C");
         mensagemblue("Recomenda-se prestar atenção!");
         delay(5000);
       }
