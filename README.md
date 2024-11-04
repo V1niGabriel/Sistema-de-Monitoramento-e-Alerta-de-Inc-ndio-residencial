@@ -22,8 +22,8 @@ Versão Atual: FireAlarmSystem-29-10-2024
 |--------------------------------|-------------------------------------------------|
 | Arduino BlackBoard UNO R3      | Controlador principal para processamento e controle dos dispositivos |
 | Sensor de Temperatura Termistor NTC | Para medição da temperatura ambiente         |
-| Sensor de gás MQ135            | Detectar gases inflamáveis e fumaça               |
-| Buzzer Piezoelétrico ativo     | Emite alertas sonoros                             |
+| Sensor de gás MQ-135           | Detectar gases inflamáveis e fumaça               |
+| Buzzer ativo                   | Emite alertas sonoros                             |
 | LED RGB                        | Alertas visuais                                   |
 | Módulo Bluetooth HC-05         | Notificação e comunicação remota via Bluetooth    |
 
@@ -67,3 +67,12 @@ Em função da garantia de qualidade e precisão, o sistema precisa ser calibrad
 **Possíveis Atualizações**
 - Integração com sistemas de casas inteligentes
 - Integração com aplicativos móveis para notificações instantâneas.
+
+## Links Complementares
+
+- [Arduino BlackBoard UNO R3](https://www.robocore.net/placa-robocore/arduino-blackboard)
+- [Termistor NTC](https://www.mundodaeletrica.com.br/sensor-ntc-caracteristicas-funcionamento/)
+- [MQ-135](https://www.makerhero.com/blog/como-funciona-o-sensor-de-gas-mq-135/)
+- [Buzzer ativo](https://sensorkit.arduino.cc/sensorkit/module/lessons/lesson/04-the-buzzer)
+- [LED RGB](https://components101.com/diodes/rgb-led-pinout-configuration-circuit-datasheet)
+- [Módulo Bluetooth HC-05](https://www.blogdarobotica.com/2023/02/13/como-utilizar-o-modulo-bluetooth-hc-05-com-arduino/)

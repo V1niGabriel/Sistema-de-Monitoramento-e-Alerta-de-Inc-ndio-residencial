@@ -2,14 +2,14 @@
 #include <SoftwareSerial.h> 
 #include <Thermistor.h>
 
-#define vermelho 4 //RGB 
-#define verde 3    //RGB 
-#define azul 2     //RGB
+#define vermelho 11 //RGB 
+#define verde 10    //RGB 
+#define azul 9     //RGB
 #define buzzer 6   //Buzzer passivo
 #define SensorGas 0 //Sensor de gás - Porta analógica
 #define SensorTemp 1 //Sensor de temperatura - porta analógica
 
-SoftwareSerial SerialBluetooth(8,11); //Portas serais do bluetooth (RX, TX)
+SoftwareSerial SerialBluetooth(2, 3); //Portas serais do bluetooth (RX, TX)
 Thermistor temp(SensorTemp); //Cria o objeto temp associado ao pino A1 da classe thermistor 
 
 enum Estado {START, STOP}; //Define o enum
@@ -24,7 +24,7 @@ void ControlaLED(bool vermelhoON, bool azulON, bool verdeON){
   digitalWrite(verde, verdeON ? HIGH : LOW);
 }
 
-//Função enviar mensagens (strings) serial bluetooth
+//Função enviar mensagens (strings) pelo serial bluetooth
 void mensagemblue(char mensagem[28]){
   SerialBluetooth.println(mensagem);
 }
@@ -59,7 +59,7 @@ void loop() {
       estadoAtual = START;
       mensagemblue("Sistema Ligado!");
     }
-    if (Dadobluetooth == '0'){
+    else if (Dadobluetooth == '0'){
       estadoAtual = STOP;
       mensagemblue("Sistema Desligado!");
     }
@@ -67,40 +67,40 @@ void loop() {
 
   switch (estadoAtual){
     case STOP:         
-      for (int x = 2; x <= 4; x++){
+      for (int x = 9; x <= 11; x++){
         digitalWrite(x, LOW); //Desliga todos os pinos do LED
       }
       break;
     case START:
       int temperatura = temp.getTemp(); //Recebe o cálculo do valor de temperatua pela biblioteca
       int EmissaoGas = analogRead(SensorGas); //Informações do Sensor de gás
-
+      
       //Envio das informações
       mensagemblue("Temperatura: ");
       dadosblue(temperatura);
       mensagemblue("°C");
-      mensagemblue("Sensor de gas: ");
+      mensagemblue("Sensor de fumaça: ");
       dadosblue(EmissaoGas);
       mensagemblue("");
       mensagemblue("");
       delay(5000);
 
-      if ((EmissaoGas < 350) && (temperatura <= 27)){ //ambiente normal
+      if ((EmissaoGas < 350) && (temperatura <= 30)){ //ambiente normal
         ControlaLED(false, false, true);
         noTone(buzzer);
       }
       else if ((EmissaoGas > 350) || (temperatura > 50)){ //alerta, possível caso de incêndio
         ControlaLED(true, false, false);
         for (int x = 0; x <= 5; x++){
-          tone(buzzer, 1500, 1000);
-        }
-        
+          tone(buzzer, 1500, 2000);
+        } 
       }
-      else if (temperatura > 32){ //Niveis de temperatura preocupante
+      else if (temperatura > 30){ //Niveis de temperatura preocupante
         ControlaLED(true, false, true);
+        noTone(buzzer);
         mensagemblue("Temperatura acima de 35°C");
         mensagemblue("Recomenda-se prestar atenção!");
-        delay(60000);
+        delay(5000);
       }
       break;
   }
