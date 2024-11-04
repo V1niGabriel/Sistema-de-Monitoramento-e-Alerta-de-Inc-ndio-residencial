@@ -27,14 +27,23 @@ Versão Atual: FireAlarmSystem-29-10-2024
 | LED RGB                        | Alertas visuais                                   |
 | Módulo Bluetooth HC-05         | Notificação e comunicação remota via Bluetooth    |
 
-**Lista de Materiais**
+**Software**
+
+IDE Arduino - Ambiente de Desenvolvimento para codificação e upload de código para o Arduino.
+
+Bibliotecas Arduino:
+
+- [Thermistor.h](https://github.com/panStamp/thermistor?tab=readme-ov-file)
+- [SoftwareSerial.h](https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
+
+### Lista de Materiais
 
 - 3 resistência de 220Ω
 - 3 resistências de 1kΩ
 - 1 Protoboard
 - jumpers
 
-**Conexões e Pinos**
+### Conexões e Pinos
 
 LED RGB:
 - pin Red -> Arduino pino digital 11
@@ -47,7 +56,7 @@ Sensor MQ-135 -> Arduino pino analógico A0
 
 Termistor NTC -> Arduino pino analógico A1
 
-**Alimentação**
+### Alimentação
 
 Placa Arduino: 5V (cabo USB tip B) ou 7-12V (Jack de energia)
 
@@ -65,15 +74,6 @@ LED RGB
 Módulo Bluetooth HC-05
 - VCC: 5V
 - Pinos RX e TX: 3.3V
-
-**Software**
-
-IDE Arduino - Ambiente de Desenvolvimento para codificação e upload de código para o Arduino.
-
-Bibliotecas Arduino:
-
-- [Thermistor.h](https://github.com/panStamp/thermistor?tab=readme-ov-file)
-- [SoftwareSerial.h](https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
 
 ## Imagem do Circuito
 <img src="Imagens/img1.jpg" alt="Foto do circuito eletrônico" width="700">
