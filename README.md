@@ -27,6 +27,43 @@ Versão Atual: FireAlarmSystem-29-10-2024
 | LED RGB                        | Alertas visuais                                   |
 | Módulo Bluetooth HC-05         | Notificação e comunicação remota via Bluetooth    |
 
+**Lista de Materiais**
+
+- 3 resistência de 220Ω
+- 3 resistências de 1kΩ
+- 1 Protoboard
+- jumpers
+
+**Conexões e Pinos**
+
+LED RGB:
+- pin Red -> Arduino pino digital 11
+- pin Grenn -> Arduino pino digital 10
+- pin Blue -> Arduino pino digital 9
+Buzzer ativo -> Arduino pino digital 6
+
+Sensor MQ-135 -> Arduino pino analógico A0
+
+Termistor NTC -> Arduino pino analógico A1
+
+**Alimentação**
+
+Placa Arduino: 5V (cabo USB tip B) ou 7-12V (Jack de energia)
+
+Thermistor NTC: 3.3V a 5V
+
+Sensor de Gás MQ-135: 5V
+
+Buzzer Ativo: 3V a 5V
+
+LED RGB
+- Red: 2V
+- Green: 3.2V
+- Blue: 3.2V
+
+Módulo Bluetooth HC-05
+- VCC: 5V
+- Pinos RX e TX: 3.3V
 
 **Software**
 
