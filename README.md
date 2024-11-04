@@ -37,7 +37,9 @@ Bibliotecas Arduino:
 - [Thermistor.h](https://github.com/panStamp/thermistor?tab=readme-ov-file)
 - [SoftwareSerial.h](https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
 
-## Diagrama de Circuito
+## Imagem do Circuito
+![Foto do circuito eletrônico](Imagens/img1.jpg)
+![Foto do circuito eletrônico](Imagens/img2.jpg)
 
 ### Requisistos do Sistema
 
