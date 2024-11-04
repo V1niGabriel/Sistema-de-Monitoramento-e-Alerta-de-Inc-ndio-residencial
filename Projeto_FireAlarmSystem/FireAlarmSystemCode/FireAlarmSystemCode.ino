@@ -5,7 +5,7 @@
 #define vermelho 11 //RGB 
 #define verde 10    //RGB 
 #define azul 9     //RGB
-#define buzzer 6   //Buzzer passivo
+#define buzzer 6   //Buzzer Ativo
 #define SensorGas 0 //Sensor de gás - Porta analógica
 #define SensorTemp 1 //Sensor de temperatura - porta analógica
 
@@ -52,6 +52,7 @@ void setup() {
 }
 void loop() {
 
+  //Verifica a presença de informação no canal  Bluetooth
   if (SerialBluetooth.available()){
     Dadobluetooth = SerialBluetooth.read();
     Serial.println(Dadobluetooth);
@@ -75,7 +76,7 @@ void loop() {
       int temperatura = temp.getTemp(); //Recebe o cálculo do valor de temperatua pela biblioteca
       int EmissaoGas = analogRead(SensorGas); //Informações do Sensor de gás
       
-      //Envio das informações
+      //Envio de informações
       mensagemblue("Temperatura: ");
       dadosblue(temperatura);
       mensagemblue("°C");
@@ -92,7 +93,7 @@ void loop() {
       else if ((EmissaoGas > 350) || (temperatura > 50)){ //alerta, possível caso de incêndio
         ControlaLED(true, false, false);
         for (int x = 0; x <= 5; x++){
-          tone(buzzer, 1500, 2000);
+          tone(buzzer, 1500, 2000); //Aciona o buzzer
         } 
       }
       else if (temperatura > 32){ //Niveis de temperatura preocupante
