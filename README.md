@@ -17,7 +17,7 @@ Versão Atual: FireAlarmSystem-29-10-2024
 
 ## Componentes do sistema
 
-**Hardware**
+### Hardware
 | Componente                     | Função                                          |
 |--------------------------------|-------------------------------------------------|
 | Arduino BlackBoard UNO R3      | Controlador principal para processamento e controle dos dispositivos |
@@ -27,7 +27,7 @@ Versão Atual: FireAlarmSystem-29-10-2024
 | LED RGB                        | Alertas visuais                                   |
 | Módulo Bluetooth HC-05         | Notificação e comunicação remota via Bluetooth    |
 
-**Software**
+### Software
 
 IDE Arduino - Ambiente de Desenvolvimento para codificação e upload de código para o Arduino.
 
