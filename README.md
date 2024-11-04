@@ -1,7 +1,7 @@
 
 # Sistema de Monitoramento e Alerta de Incêndio Residêncial
 
-Este repositório contém um projeto desenvolvidos para aprendizado, prática e demonstração de habilidades em programação, eletrônica, microcontroladores.  Servindo como um portfólio de experimento.
+Este repositório contém um projeto desenvolvido para aprendizado, prática e demonstração de habilidades em programação, eletrônica e microcontroladores. Servindo como um portfólio de experimento.
 
 Data de Iníco: 1 de outubro de 2024
 
