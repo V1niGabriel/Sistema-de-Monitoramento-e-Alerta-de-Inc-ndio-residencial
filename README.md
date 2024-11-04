@@ -38,8 +38,8 @@ Bibliotecas Arduino:
 - [SoftwareSerial.h](https://docs.arduino.cc/learn/built-in-libraries/software-serial/)
 
 ## Imagem do Circuito
-<img src="Imagens/img1.jpg" alt="Foto do circuito eletrônico" width="600" height="600">
-<img src="Imagens/img2.jpg" alt="Foto do circuito eletrônico" width="600" height="600">
+<img src="Imagens/img1.jpg" alt="Foto do circuito eletrônico" width="700">
+<img src="Imagens/img2.jpg" alt="Foto do circuito eletrônico" width="700">
 
 ### Requisistos do Sistema
 
