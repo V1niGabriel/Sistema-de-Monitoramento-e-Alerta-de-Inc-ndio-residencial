@@ -75,6 +75,13 @@ Módulo Bluetooth HC-05
 - VCC: 5V
 - Pinos RX e TX: 3.3V
 
+##Controle do Sistema
+
+Ao iniciar o sistema é importante conectá-lo ao bluetooth. Isso habilita o envio de informações pela comunicação bluetooth, permitindo acesso ao controle de execucção do minotramento dos dados obtidos.
+Inicialmente, o sistema começa em estado STOP, ou seja, desligado, sem monitorar os dados.
+- **Ligar o Sistema:** digite **1** no prompt de comando da comunicação ou aplicação.
+- **Desligar o Sistema:** digite **2** no prompt de comando da comunicação ou aplicação.
+
 ## Imagem do Circuito
 <img src="Imagens/img1.jpg" alt="Foto do circuito eletrônico" width="700">
 <img src="Imagens/img2.jpg" alt="Foto do circuito eletrônico" width="700">
