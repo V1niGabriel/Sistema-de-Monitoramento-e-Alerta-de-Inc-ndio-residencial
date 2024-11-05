@@ -1,5 +1,5 @@
 
-# Sistema de Monitoramento e Alerta de Incêndio Residêncial
+# Sistema de Monitoramento e Alerta de Incêndio residencial
 
 Este repositório contém um projeto desenvolvido para aprendizado, prática e demonstração de habilidades em programação, eletrônica e microcontroladores. Servindo como um portfólio de experimento.
 
