@@ -82,6 +82,11 @@ Inicialmente, o sistema começa em estado STOP, ou seja, desligado, sem monitora
 - **Ligar o Sistema:** digite **1** no prompt de comando da comunicação ou aplicação.
 - **Desligar o Sistema:** digite **0** no prompt de comando da comunicação ou aplicação.
 
+### Representação das cores do LED
+- **VERDE:** Em ambientes com temperatura abaixo de 32°C e concentração de fumaça < 350 nenhum alerta é emitido. 
+- **AMARELO:** Ambiente com nível de temperatura > 32°C. Não representa risco, contudo é importante estar atento.
+- **VERMELHO:** Temperatura crítica ou presença de fumaça dectada. Alertas sonoros e mensagens de "Perigo" são emitidos. 
+
 ## Imagem do Circuito
 <img src="Imagens/img1.jpg" alt="Foto do circuito eletrônico" width="700">
 <img src="Imagens/img2.jpg" alt="Foto do circuito eletrônico" width="700">
