@@ -92,6 +92,7 @@ void loop() {
       }
       else if ((EmissaoGas > 350) || (temperatura > 50)){ //alerta, possível caso de incêndio
         ControlaLED(true, false, false);
+        mensagemblue("PERIGO! Provável Incêndio");
         for (int x = 0; x <= 5; x++){
           tone(buzzer, 1500, 2000); //Aciona o buzzer
         } 
